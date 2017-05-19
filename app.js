@@ -5,10 +5,8 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 
-
 //Using expressjs
 const app = express();
-
 
 //Port of server
 const port = 3000;
