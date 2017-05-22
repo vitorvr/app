@@ -9,8 +9,8 @@ const dbConfig = require('./config/database')
 
 //DB Connect and On Connection
 mongoose.connect(dbConfig.database);
-mongoose.connection.on('connected', () => {console.log('Connected to database '+ dbConfig.database)});
-mongoose.connection.on('error', (err) => {console.log('Database error'+ err)});
+mongoose.connection.on('connected', () => { console.log('Connected to database ' + dbConfig.database) });
+mongoose.connection.on('error', (err) => { console.log('Database error' + err) });
 
 //Using expressjs
 const app = express();
