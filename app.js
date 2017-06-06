@@ -21,7 +21,7 @@ const port = 3000;
 //Using CORS to allow differents domains
 app.use(cors());
 
-//Body Parser
+//Body Parser````
 app.use(bodyParser.json());
 
 //Passport
