@@ -16,7 +16,7 @@ mongoose.connection.on('error', (err) => { console.log('Database error' + err) }
 const app = express();
 
 //Port of server
-const port = 3000;
+const port = process.env.PORT || 8080;
 
 //Using CORS to allow differents domains
 app.use(cors());
@@ -36,6 +36,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Index
 app.get('/', (request, response) => {
 	response.send('Invalid Path');
+});
+
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 //Satar server
