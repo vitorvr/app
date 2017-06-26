@@ -16,11 +16,6 @@
   	"passport":"*",
   	"passport-jwt":"*"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://rowel90x@bitbucket.org/rowel90x/first-app.git"
-  },
   "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/rowel90x/first-app#readme"
+  "license": "ISC"
 }
