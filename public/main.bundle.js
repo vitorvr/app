@@ -749,7 +749,7 @@ var AuthService = (function () {
             return ep;
         }
         else {
-            return 'http://localhost:8080/' + ep;
+            return '//localhost:8080/' + ep;
         }
     };
     AuthService = __decorate([
